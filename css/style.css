@@ -1,3 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+:root {
+--soft-red: hsl(10, 79%, 65%);
+--cyan: hsl(186, 34%, 60%);
+--dark-brown: hsl(25, 47%, 15%);
+--medium-brown: hsl(28, 10%, 53%);
+--cream: hsl(27, 66%, 92%);
+--very-pale-orange: hsl(33, 100%, 98%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    line-height: 1.6;
+    background-color: var(--cream);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#header {
+    width: 21.875rem;
+    padding: 1rem;
+    border-radius: .625rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    background-color: var(--soft-red);
+    margin-bottom: 1rem;
+}
+
+#header > img {
+    width: 3.125rem;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: .7rem;
+    margin-bottom: .2rem;
+}
+
+#my-balance > p {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+#chart-container {
+    width: 21.875rem;
+    background-color: var(--very-pale-orange);
+    border-radius: .625rem;
+    padding: 1rem 0 1rem 0;
+}
+
+#title {
+    font-size: 1.2rem;
+    margin: 0 1rem 4rem 1rem;
+}
+
+#chart-div {
+    margin-bottom: 1.2rem;
+}
+
+#amounts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 .8rem 0 .8rem;
+}
+
+.amount {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    font-size: .7rem;
+    font-weight: 400;
+    color: #fff;
+    width: 2.5rem;
+    background-color: var(--dark-brown);
+    border-radius: .1875rem;
+    padding: .4rem;
+}
+
+#bars {
+    margin: 0 1rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.bar {
+    border-radius: .3125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 2.1875rem;
+    background-color: var(--soft-red);
+}
+
+.bar:hover {
+    cursor: pointer;
+    background-color: rgba(236, 119, 95, .8);
+}
+
+.cyan-div {
+    background-color: var(--cyan);
+}
+
+.cyan-div:hover {
+    background-color: rgba(118, 181, 188, .8);
+}
+
+
+
+
+
+
+
+
+
+
 
